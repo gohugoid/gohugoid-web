@@ -13,5 +13,5 @@ install:
 
 script:
   - hugo version
-  - chmod +x deploy-ci.sh
-  - ./deploy-ci.sh
+  - chmod +x deploy.sh
+  - ./deploy.sh
