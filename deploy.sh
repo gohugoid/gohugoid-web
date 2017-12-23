@@ -23,7 +23,7 @@ function get_current_site {
 
 function build_site { 
 	echo "building site..."
-	hugo --config config.production.toml
+	hugo
 }
 
 function deploy {
