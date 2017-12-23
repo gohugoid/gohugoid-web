@@ -1,0 +1,5 @@
+baseURL = "https://gohugoid.github.com"
+languageCode = "en-us"
+title = "Komunitas Hugo Indonesia"
+
+theme = "nusantara"
