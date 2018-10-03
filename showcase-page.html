@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title> Showcase </title>
+
+  <style>
+    body {
+      background-color: #F8F8F8;
+      font-family: Helvetica
+    }
+
+    .showcase-container {
+      padding: 20px 30px 0px 30px;
+
+    }
+
+    .title {
+      margin: 20px;
+    }
+
+    a {
+      color: black;
+      text-decoration: none;
+    }
+
+    .showcase-projects {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .project {
+      border: 1px solid #aaa;
+      width: 350px;
+      padding: 30px;
+      background-color: white;
+      transition: 0.5s;
+      margin: 10px;
+    }
+
+    @media (max-width:530px) {
+      .project {
+        width: 250px;
+      }
+    }
+
+    .project:hover {
+      background-color: #F0F0F0;
+    }
+
+    .project-img {
+      transform: scale(1);
+      width: 100%;
+      height: 150px;
+      transition: 0.5s;
+    }
+
+    .project-img:hover {
+      transform: scale(1.04);
+    }
+
+    h2 {
+      margin: 20px 0 20px 0;
+    }
+
+    .showcase-template {
+      width: 80%;
+      margin: 40px 10px 40px 10px;
+      border: 1px solid #aaa;
+      padding: 30px;
+      background-color: white;
+      transition: 0.5s;
+    }
+
+    .showcase-template-img {
+      height: auto;
+    }
+
+    .about-showcase {
+      font-size: 20px;
+      margin: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="showcase-container">
+    <h1 class="title">
+      <strong> Showcase</strong>
+    </h1>
+
+    <div class="showcase-projects">
+      <a href="#">
+        <div class="project">
+
+          <img src="https://images.pexels.com/photos/1435740/pexels-photo-1435740.jpeg?auto=compress&cs=tinysrgb&h=350" class="project-img" alt="image">
+          <h2>Program name </h2>
+        </div>
+
+      </a>
+      <a href="#">
+        <div class="project">
+
+          <img src="https://images.pexels.com/photos/1435740/pexels-photo-1435740.jpeg?auto=compress&cs=tinysrgb&h=350" class="project-img" alt="image">
+          <h2>Program name </h2>
+        </div>
+
+      </a>
+      <a href="#">
+        <div class="project">
+
+          <img src="https://images.pexels.com/photos/1435740/pexels-photo-1435740.jpeg?auto=compress&cs=tinysrgb&h=350" class="project-img" alt="image">
+          <h2>Program name </h2>
+        </div>
+
+      </a>
+      <a href="#">
+        <div class="project">
+
+          <img src="https://images.pexels.com/photos/1435740/pexels-photo-1435740.jpeg?auto=compress&cs=tinysrgb&h=350" class="project-img" alt="image">
+          <h2>Program name </h2>
+        </div>
+
+      </a>
+      <a href="#">
+        <div class="project">
+
+          <img src="https://images.pexels.com/photos/1435740/pexels-photo-1435740.jpeg?auto=compress&cs=tinysrgb&h=350" class="project-img" alt="image">
+          <h2>Program name </h2>
+        </div>
+
+      </a>
+
+    </div>
+
+    <a href="#">
+      <div class="showcase-template">
+
+        <img src="https://images.pexels.com/photos/134062/pexels-photo-134062.jpeg?auto=compress&cs=tinysrgb&h=350" class="project-img showcase-template-img" alt="image">
+        <h2>Program name </h2>
+      </div>
+
+    </a>
+
+    <p class="about-showcase">The Showcase articles are copyright the content authors. Any open source license will be attached.</p>
+
+  </div>
+</body>
+
+</html>
