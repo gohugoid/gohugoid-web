@@ -1,0 +1,11 @@
+name: Deploy
+on: [push]
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+    - name: Check out code
+      uses: actions/checkout@master
+    - name: Build Hugo
+      uses: gohugoid/build-hugo@v0.61.0
