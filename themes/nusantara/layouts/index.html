@@ -1,24 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{ .Site.Title }}</title>
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <link rel="icon" href="/logo.png" />
 </head>
+
 <body>
-    <h1><img src="/logo.png" width="36" /> {{ .Site.Title }}</h1>
-    <p>Komunitas Hugo Indonesia adalah tempat ngumpul para pengguna, pembuat template, dan pengembang Hugo dari seluruh penjuru nusantara</p>
-    <p>Join:
-        <a href="https://t.me/gohugoid">Telegram</a>
-        |
-        <a href="https://github.com/gohugoid">Github</a>
-    </p>
-    <hr>
-    <p>Website masih dalam tahap pengembangan</p>
-    <p>Ikut kontribusi: <a href="https://github.com/gohugoid/gohugoid-web">Web Hugo Indonesia</a></p>
-    <p>Status: <img src="https://travis-ci.org/gohugoid/gohugoid-web.svg?branch=master" /></p>
+
+    <nav class="navbar" role="navigation" aria-label="main navigation">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="https://bulma.io">
+                    <img src="/logo.png" height="28">
+                </a>
+
+                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+                    data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start">
+                    <a href="{{ .Site.BaseURL }}" class="navbar-item">
+                        Home
+                    </a>
+
+                    <a href="https://gohugo.io/documentation/" class="navbar-item" target="_blank">
+                        Documentation
+                    </a>
+
+                    <a href="/showcase/" class="navbar-item">
+                        Showcase
+                    </a>
+
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link">
+                            More
+                        </a>
+
+                        <div class="navbar-dropdown">
+                            <a class="navbar-item">
+                                About
+                            </a>
+                            <a class="navbar-item">
+                                Jobs
+                            </a>
+                            <a class="navbar-item">
+                                Contact
+                            </a>
+                            <hr class="navbar-divider">
+                            <a href="https://github.com/gohugoid/gohugoid-web/issues/new" class="navbar-item">
+                                Report an issue
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="navbar-end">
+                    <div class="navbar-item">
+                        <div class="buttons">
+                            <a href="https://t.me/gohugoid/" class="button is-primary" target="_blank">
+                                <strong>Join Group</strong>
+                            </a>
+                            <a href="https://github.com/gohugoid/" class="button is-light" target="_blank">
+                                Contribute
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero is-danger is-medium">
+        <section class="hero-body">
+            <div class="container has-text-centered">
+                <!-- <img src="/logo.png" width="120" /> -->
+                <!-- <h1 class="title has-text-white">
+                    {{ .Site.Title }}
+                </h1>
+                <a href="https://t.me/gohugoid/" class="button is-primary" target="_blank">
+                    <strong>Join Group</strong>
+                </a> -->
+                <!-- <p class="subtitle has-text-white">
+                    Komunitas Hugo Indonesia adalah tempat ngumpul para pengguna, pembuat template, dan pengembang Hugo
+                    dari seluruh penjuru nusanta
+                </p> -->
+            </div>
+        </section>
+    </header>
+
+
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+                <div class="box hero column is-8 is-offset-2" style="margin-top:-150px">
+                    <nav class="level is-mobile hero-body">
+                        <div class="level-item has-text-centered">
+                            <div>
+                                <span class="icon">
+                                    <i class="fas fa-users fa-4x has-text-info"></i>
+                                </span>
+                                <p class="heading">Members</p>
+                                <p class="title" id="member-count">0</p>
+                            </div>
+                        </div>
+                        <div class="level-item has-text-centered">
+                            <div>
+                                <span class="icon">
+                                    <i class="fas fa-calendar-alt fa-4x has-text-warning"></i>
+                                </span>
+                                <p class="heading">Events</p>
+                                <p class="title">0</p>
+                            </div>
+                        </div>
+                        <div class="level-item has-text-centered">
+                            <div>
+                                <span class="icon">
+                                    <i class="fas fa-globe-asia fa-4x has-text-primary"></i>
+                                </span>
+                                <p class="heading">Websites</p>
+                                <p class="title">45</p>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <div class="columns">
+            <div class="column is-4 is-offset-1 has-text-center">
+                <img src="https://42f2671d685f51e10fc6-b9fcecea3e50b3b59bdc28dead054ebc.ssl.cf5.rackcdn.com/illustrations/status_update_jjgk.svg" 
+                width="400"/>
+            </div>
+            <div class="column is-6">
+                <h2 class="title">About Us</h2>
+                <p>Hugo Indonesia adalah komunitas pengguna dan pengembang Hugo di Indonesia.
+                    Mulai berdiri sejak 18 Desember 2017 (di Telegram). Komunitas ini bertujuan untuk belajar dan
+                    berbagi segala hal tentang Hugo Static Site Generator.
+                </p>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="content has-text-centered">
+            <p>
+                <strong>Hugo Indonesia</strong> 2020. The website content
+                is licensed <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+            </p>
+        </div>
+    </footer>
+
+
+    <script>
+        var url = "https://gohugoid.glitch.me/member-count";
+        fetch(url)
+            .then(response => response.json())
+            .then(data => {
+                console.log(data);
+                document.querySelector("#member-count").innerHTML = data;
+            });
+    </script>
 </body>
+
 </html>
