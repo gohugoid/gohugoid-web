@@ -10,6 +10,18 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <link rel="icon" href="/logo.png" />
+
+    <style>
+        .counter-panel {
+            margin-top: -9em;
+        }
+
+        @media only screen and (max-width: 768px) {
+            .counter-panel {
+                margin-top: -5em;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -35,19 +47,19 @@
     </header>
 
 
-    <section class="section">
+    <section class="section counter-panel">
         <div class="container">
             <div class="columns">
-                <div class="box hero column is-8 is-offset-2" style="margin-top:-150px">
+                <div class="box hero column is-8 is-offset-2">
                     <nav class="level is-mobile hero-body">
                         <div class="level-item has-text-centered">
                             <div>
                                 <a href="https://t.me/gohugoid/" target="_blank">
-                                <span class="icon">
-                                    <i class="fas fa-users fa-4x has-text-info"></i>
-                                </span>
-                                <p class="heading">Members</p>
-                                <p class="title" id="member-count">0</p>
+                                    <span class="icon">
+                                        <i class="fas fa-users fa-4x has-text-info"></i>
+                                    </span>
+                                    <p class="heading">Members</p>
+                                    <p class="title" id="member-count">0</p>
                                 </a>
                             </div>
                         </div>
