@@ -7,12 +7,13 @@ This is source code of Hugo Indonesia Community website.
 
 ## Requirements
 
-- Hugo versi `0.61.0`
+- Hugo `v0.62.0`
 
 ## Cara Menambahkan Showcase
 
 Silahkan edit file `data/showcase.yml`, masukan nama website
 dan nama domainnya. Ikuti saja seperti data yang sudah ada di sana.
+Jangan gunakan http/https, cukup tulis nama domain saja.
 
 Contoh:
 
