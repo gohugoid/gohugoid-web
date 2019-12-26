@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{ .Site.Title }}</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+    <link rel="icon" href="/logo.png" />
+</head>
+
+<body>
+
+    {{ partial "navbar.html" . }}
+
+    <header class="hero is-danger">
+        <section class="hero-body">
+            <div class="container has-text-centered">
+
+                <h1 class="title has-text-white">
+                    {{ .Title }}
+                </h1>
+                <p class="subtitle has-text-white">
+                    {{ len .Site.Data.showcase }} website indonesia yang menggunakan Hugo
+                </p>
+            </div>
+        </section>
+    </header>
+
+
+    <!--  -->
+    <section class="section">
+        <div class="container">
+            <div class="columns is-multiline">
+                {{ range .Site.Data.showcase }}
+                <div class="column is-3">
+                    <div class="box">
+                        <div class="box-body has-text-centered">
+                            <a href="https://{{ .domain }}" target="_blank" >
+                                <img src="https://cdn.staticaly.com/screenshot/{{ .domain }}?w=350&h=250" />
+                            </a>
+                            <span>{{ .name }}</span>
+                        </div>
+                    </div>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+    </section>
+
+    <!-- @TODO: add lazyLoad on this page -->
+    <!-- @TODO: Use Pagintaion on this page -->
+
+    {{ partial "footer.html" . }}
+
+</body>
+
+</html>
