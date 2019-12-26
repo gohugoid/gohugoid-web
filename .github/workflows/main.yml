@@ -8,4 +8,4 @@ jobs:
     - name: Check out code
       uses: actions/checkout@master
     - name: Build Hugo
-      uses: gohugoid/build-hugo@v0.61.0
+      uses: gohugoid/build-hugo@v0.61.0 --minify
