@@ -10,7 +10,7 @@ jobs:
       with:
         fetch-depth: 1
     - name: Publish Site
-      uses: chabad360/hugo-gh-pages@master
+      uses: gohugoid/hugo-gh-pages@master
       with:
         githubToken: ${{ secrets.DEPLOY_TOKEN }}
         # Remember to set this as a secret (i.e. secrets.PERSONAL_TOKEN).
