@@ -44,12 +44,14 @@
                     <div class="box">
                         <div class="box-body has-text-centered">
                             <a href="https://{{ .domain }}" target="_blank">
-                                <img src="https://s-ssl.wordpress.com/mshots/v1/{{ .domain }}?w=360" />
+                                <img class="lazyload" src="/img/placeholder.png" data-src="https://s-ssl.wordpress.com/mshots/v1/{{ .domain }}?w=360" loading="lazy" />
                                 <!-- 
-                                    <img src="https://cdn.staticaly.com/screenshot/{{ .domain }}?w=360" /> 
+                                    <img class="lazyload" src="https://cdn.staticaly.com/screenshot/{{ .domain }}?w=360" loading="lazy" /> 
                                     
                                     alternatif bisa pakai staticaly untuk mengambil screenshot,
                                     tapi untuk saat ini screenshot pakai wordpress lebih bagus.
+
+                                    Note: loading="lazy" only work di Google Chrome
                                 -->
                             </a>
                             <h4>{{ .name }}</h4>
@@ -61,11 +63,40 @@
         </div>
     </section>
 
-    <!-- @TODO: add lazyLoad on this page -->
-    <!-- @TODO: Use Pagintaion on this page -->
+    <!-- @TODO: Use Pagintaion on this page (Hugo pagination only work for regular page)-->
 
     {{ partial "footer.html" . }}
 
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var lazyImages = [].slice.call(document.querySelectorAll(".lazyload"));
+
+            if ("IntersectionObserver" in window) {
+                let lazyImageObserver = new IntersectionObserver(function (entries, observer) {
+                    entries.forEach(function (entry) {
+
+                        if (entry.isIntersecting) {
+                            let lazyImage = entry.target;
+                            if (lazyImage.dataset.src != undefined)
+                                lazyImage.src = lazyImage.dataset.src;
+                            if (lazyImage.dataset.srcset != undefined)
+                                lazyImage.srcset = lazyImage.dataset.srcset;
+
+                            lazyImage.classList.add("lazyloaded");
+                            lazyImageObserver.unobserve(lazyImage);
+                        }
+                    });
+                });
+
+                lazyImages.forEach(function (lazyImage) {
+                    lazyImageObserver.observe(lazyImage);
+                });
+            } else {
+                // Possibly fall back to a more compatible method here
+                console.log("Browser Not supported, please upgrade!");
+            }
+        });
+    </script>
 </body>
 
 </html>
