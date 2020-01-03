@@ -57,6 +57,9 @@
 
 - name: finder.co.id
   domain: finder.co.id
+  
+- name: Dev Stories
+  domain: fadil.dev
 
 # G
 
