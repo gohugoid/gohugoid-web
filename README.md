@@ -1,6 +1,7 @@
 ## Hugo Indoensia Websites
 
 ![Build Status](https://github.com/gohugoid/gohugoid-web/workflows/Deploy/badge.svg)
+[![Telegram][Telegram-badge]][Telegram]
 
 This is source code of Hugo Indonesia Community website.
 
@@ -25,3 +26,6 @@ Contoh:
 ## Have an Idea?
 
 Please open the [issue](https://github.com/gohugoid/gohugoid-web/issues) or pull request.
+
+[Telegram]: https://t.me/gohugoid
+[Telegram-badge]: https://img.shields.io/badge/chat%20on-telegram-blue.svg
