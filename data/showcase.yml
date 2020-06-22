@@ -53,6 +53,9 @@
 - name: epsi-rns.gitlab.io
   domain: epsi-rns.gitlab.io
 
+- name: Erikrios
+  domain: erikrios.github.io
+
 # F
 
 - name: fadhil.id
