@@ -8,9 +8,6 @@
 
 - name: Adrian Riyadi
   domain: adrian.id
-  
-- name: Afrizal Habibi
-  domain: afrizalhabibi.me
 
 - name: ahmadiham.id
   domain: ahmadiham.id
@@ -94,9 +91,6 @@
 - name: Indra Gunawan
   domain: indra.my.id
   
-- name: Iqbalbirrul.com
-  domain: iqbalbirrul.com
-  
 - name: Iril Blog
   domain: iril.my.id
 
@@ -115,9 +109,6 @@
 
 # L
 
-- name: Linuxisekai
-  domain: www.linuxisekai.site
-
 - name: Lombokfoss
   domain: www.lombokfoss.com
 
@@ -135,22 +126,20 @@
 - name: Meutia Rahmah
   domain: www.meutiarahmah.com
 
-- name: Muhammad Aswan Syahputra
-  domain: aswansyahputra.com
-
 - name: Mohamad Faisal Kholid
   domain: faisalkholid.github.io
 
 # N
+
+- name: Nafies Luthfi
+  domain: nafies.id
+
 # O
 
 - name: Opa kholis Majid
   domain: opxop.js.org
 
 # P
-
-- name: Pelajar TKJ Pengguna Linux
-  domain: inseptek.github.io
 
 - name: Petani Kode
   domain: www.petanikode.com
@@ -198,9 +187,6 @@
   domain: xecops.com
 
 # Y
-
-- name: Yudanantoos
-  domain: yuda.nantoos.id
   
 - name: Yuda P. Nugraha
   domain: yudanugraha.id
