@@ -23,7 +23,7 @@ categories:
 
 external_url: "" # <-- link to original post
 
-# Catatan: Jika anda mengisi maram external_url, maka post ini akan mengarah
+# Catatan: Jika anda mengisi param external_url, maka post ini akan mengarah
 # ke alamat tersebut. Tetapi jika kosong, maka ini termasuk internal post.
 
 image: "/img/" # <-- bisa dikosongkan jika external post
