@@ -11,15 +11,23 @@ title: "{{ replace .TranslationBaseName "-" " " | title }}"
 slug: {{ .BaseFileName }}
 
 tags:
-    - Hugo
+    - Template
+    - Shorcode
+    - Hosting
+    - Content
 
 categories:
+    - Tips
     - Tutorial
+    - Info
 
 external_url: "" # <-- link to original post
 
-image: "/img/"
-thumbnail: "/img/"
+# Catatan: Jika anda mengisi maram external_url, maka post ini akan mengarah
+# ke alamat tersebut. Tetapi jika kosong, maka ini termasuk internal post.
+
+image: "/img/" # <-- bisa dikosongkan jika external post
+thumbnail: "/img/" # <-- bisa dikosongkan jika  external post
 description: "" # <-- isi ini!
 ---
 
