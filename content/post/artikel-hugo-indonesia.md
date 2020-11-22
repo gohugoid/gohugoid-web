@@ -133,7 +133,7 @@ Terakhir, isi judul dan deskripsi pull-request. Setelah itu klik tombol **Create
 
 ## Step 5 -- Selesai
 
-Selamat :tada: 
+Selamat 🎉
 
 Kamu sudah menambahkan artikel baru di Web Hugo Indonesia. Tinggal tunggu review dari admin. Jika Pull-request yang kamu ajukan di-merge, maka artikel akan ditambahkan.
 
