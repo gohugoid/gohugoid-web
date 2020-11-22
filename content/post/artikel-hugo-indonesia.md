@@ -31,7 +31,7 @@ typora-root-url: ../../static
 
 <!-- @TODO: lengkapi gambar screenshot -->
 
-Ayo tambahkan artikelmu ke Hugo Indonesia agar muda ditemukan. Hugo Indonesia
+Ayo tambahkan artikelmu ke Hugo Indonesia agar mudah ditemukan. Hugo Indonesia
 adalah komunitas pengguna dan pengembang Hugo, jadi pastikan artikelmu membahas
 tentang Hugo atau masih related dengan Hugo.
 
