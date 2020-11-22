@@ -23,6 +23,10 @@ Contoh:
   domain: gohugoid.github.io
 ```
 
+## Cara Menambahkan Artikel
+
+Silahkan baca tutorial [cara menambahkan artikel di web Hugo indonesia](https://gohugoid.github.io/post/artikel-hugo-indonesia/).
+
 ## Have an Idea?
 
 Please open the [issue](https://github.com/gohugoid/gohugoid-web/issues) or pull request.
