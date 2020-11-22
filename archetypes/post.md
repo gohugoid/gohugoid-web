@@ -1,5 +1,5 @@
 ---
-draft: true
+draft: true # <-- jangan lupa set ke false agar bisa dipublish
 date: {{ .Date }}
 updated: {{ .Date }}
 type: post
@@ -31,4 +31,4 @@ thumbnail: "/img/" # <-- bisa dikosongkan jika  external post
 description: "" # <-- isi ini!
 ---
 
-<!-- Jika ini postingan dari luar (eksternal), maka konten tidak perlu diisi ya! -->
+<!-- Jika ini postingan dari luar (eksternal post), maka konten tidak perlu diisi ya! -->
