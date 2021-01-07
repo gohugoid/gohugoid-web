@@ -1,4 +1,4 @@
-## Hugo Indoensia Websites
+## Hugo Indonesia Websites
 
 ![Build Status](https://github.com/gohugoid/gohugoid-web/workflows/Deploy/badge.svg)
 [![Telegram][Telegram-badge]][Telegram]
