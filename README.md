@@ -12,7 +12,7 @@ This is source code of Hugo Indonesia Community website.
 
 ## Cara Menambahkan Showcase
 
-Silahkan edit file `data/showcase.yml`, masukan nama website
+Silakan edit file `data/showcase.yml`, masukan nama website
 dan nama domainnya. Ikuti saja seperti data yang sudah ada di sana.
 Jangan gunakan http/https, cukup tulis nama domain saja.
 
@@ -25,7 +25,7 @@ Contoh:
 
 ## Cara Menambahkan Artikel
 
-Silahkan baca tutorial [cara menambahkan artikel di web Hugo indonesia](https://gohugoid.github.io/post/artikel-hugo-indonesia/).
+Silakan baca tutorial [cara menambahkan artikel di web Hugo indonesia](https://gohugoid.github.io/post/artikel-hugo-indonesia/).
 
 ## Have an Idea?
 
