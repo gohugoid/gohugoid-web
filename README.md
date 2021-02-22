@@ -1,4 +1,4 @@
-## Hugo Indoensia Websites
+## Hugo Indonesia Websites
 
 ![Build Status](https://github.com/gohugoid/gohugoid-web/workflows/Deploy/badge.svg)
 [![Telegram][Telegram-badge]][Telegram]
@@ -8,7 +8,7 @@ This is source code of Hugo Indonesia Community website.
 
 ## Requirements
 
-- Hugo `v0.62.0`
+- Hugo `v0.73.0`
 
 ## Cara Menambahkan Showcase
 
@@ -22,6 +22,10 @@ Contoh:
 - name: Hugo Indonesia
   domain: gohugoid.github.io
 ```
+
+## Cara Menambahkan Artikel
+
+Silahkan baca tutorial [cara menambahkan artikel di web Hugo indonesia](https://gohugoid.github.io/post/artikel-hugo-indonesia/).
 
 ## Have an Idea?
 

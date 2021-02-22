@@ -1,47 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>{{ .Site.Title }}</title>
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-    <link rel="icon" href="/logo.png" />
-
-    <style>
-        .counter-panel {
-            margin-top: -9em;
-        }
-
-        @media only screen and (max-width: 768px) {
-            .counter-panel {
-                margin-top: -5em;
-            }
-        }
-    </style>
-</head>
-
-<body>
-
-    {{ partial "navbar.html" . }}
-
+{{ define "main" }}
+   
     <header class="hero is-danger is-medium">
         <section class="hero-body">
             <div class="container has-text-centered">
-                <!-- <img src="/logo.png" width="120" /> -->
-                <!-- <h1 class="title has-text-white">
-                    {{ .Site.Title }}
-                </h1>
-                <a href="https://t.me/gohugoid/" class="button is-primary" target="_blank">
-                    <strong>Join Group</strong>
-                </a> -->
-                <!-- <p class="subtitle has-text-white">
-                    Komunitas Hugo Indonesia adalah tempat ngumpul para pengguna, pembuat template, dan pengembang Hugo
-                    dari seluruh penjuru nusanta
-                </p> -->
+                
             </div>
         </section>
     </header>
@@ -93,8 +55,7 @@
         <div class="container">
             <div class="columns">
                 <div class="column is-4 is-offset-1 has-text-center">
-                    <img src="https://42f2671d685f51e10fc6-b9fcecea3e50b3b59bdc28dead054ebc.ssl.cf5.rackcdn.com/illustrations/status_update_jjgk.svg"
-                        width="400" />
+                    <img src="/img/status-update.svg" alt="/img/status-update.svg" title="About Us" width="400" />
                 </div>
                 <div class="column is-6">
                     <h2 class="title">About Us</h2>
@@ -107,7 +68,7 @@
         </div>
     </section>
 
-    {{ partial "footer.html" . }}
+    
 
 
     <script>
@@ -117,6 +78,5 @@
                 document.querySelector("#member-count").innerHTML = data;
             });
     </script>
-</body>
 
-</html>
+{{ end }}

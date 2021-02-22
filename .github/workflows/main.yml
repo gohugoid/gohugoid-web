@@ -22,7 +22,7 @@ jobs:
         repo: gohugoid/gohugoid.github.io
         # Use if your pushing to a different repo.
         # Dont add ".git" to the end of the URL (youl'll get 404s).
-        hugoVersion: 0.62.0
+        hugoVersion: 0.73.0
         # Use if your site requires a specific version of Hugo
         # Append "extended_" to the begining to use Hugo Extended
         args: --gc --minify --cleanDestinationDir

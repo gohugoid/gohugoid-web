@@ -3,18 +3,27 @@
 
 # A
 
+- name: Andre Rio
+  domain: wibucode.com
+
+- name: Abdullahsams
+  domain: abdullahsams.me
+  
 - name: Adi Nugroho
   domain: adinugroho.my.id
 
-- name: Adrian Riyadi
-  domain: adrian.id
-  
-- name: Afrizal Habibi
-  domain: afrizalhabibi.me
+# - name: Adrian Riyadi
+#   domain: adrian.id
 
 - name: ahmadiham.id
   domain: ahmadiham.id
-
+  
+- name: Ahmad Fadilah
+  domain: ahmadfadilah.xyz
+  
+- name: Ara
+  domain: pena-ara.github.io
+  
 - name: Ardianta
   domain: www.ardianta.com
 
@@ -28,6 +37,9 @@
 
 - name: Bowo's Blog
   domain: www.owob.web.id
+
+- name: Budiman Fajar Firdaus
+  domain: budidev.com
 
 # C
 
@@ -44,11 +56,17 @@
 
 - name: Developer Muslim
   domain: devmuslim.id
+  
+- name: by DiPtra
+  domain: blog.diptra.id
 
 # E
 
 - name: epsi-rns.gitlab.io
   domain: epsi-rns.gitlab.io
+
+- name: Erikrios
+  domain: erikrios.github.io
 
 # F
 
@@ -67,6 +85,9 @@
 
 - name: Hilma's notes
   domain: icit.web.id
+
+- name: Himawari466 Blog
+  domain: himawari466.github.io/blog
 
 - name: Hugo Indonesia
   domain: gohugoid.github.io
@@ -88,8 +109,8 @@
 - name: Indra Gunawan
   domain: indra.my.id
   
-- name: Iqbalbirrul.com
-  domain: iqbalbirrul.com
+- name: Iril Blog
+  domain: iril.my.id
 
 - name: isul.net
   domain: isul.net
@@ -101,10 +122,13 @@
 - name: KBL Bumigora
   domain: kbl.stmikbumigora.ac.id
 
-# L
+- name: Khusika Dhamar Gusti
+  domain: khusika.com
+  
+- name: kodebaper
+  domain: kodebaper.com
 
-- name: Linuxisekai
-  domain: www.linuxisekai.site
+# L
 
 - name: Lombokfoss
   domain: www.lombokfoss.com
@@ -123,18 +147,26 @@
 - name: Meutia Rahmah
   domain: www.meutiarahmah.com
 
-- name: Muhammad Aswan Syahputra
-  domain: aswansyahputra.com
-
 - name: Mohamad Faisal Kholid
   domain: faisalkholid.github.io
 
-# N
-# O
-# P
+- name: Muhammad Hanif
+  domain: hanifmu.com
 
-- name: Pelajar TKJ Pengguna Linux
-  domain: inseptek.github.io
+# N
+
+- name: Nafies Luthfi
+  domain: nafies.id
+
+- name: Nurofsun
+  domain: nurofsun.com
+
+# O
+
+- name: Opa kholis Majid
+  domain: opxop.js.org
+
+# P
 
 - name: Petani Kode
   domain: www.petanikode.com
@@ -150,6 +182,9 @@
 
 # S
 
+- name: Saya Kresna
+  domain: www.satyakresna.io
+
 - name: Serverless Indonesia
   domain: blog.serverless.id
 
@@ -158,8 +193,15 @@
 
 - name: Surya Adhi Kuncoro
   domain: suryadhi.web.id
+  
+- name: Syahrul Fadli
+  domain: syahrulfadli.netlify.app
 
 # T
+  
+- name: Yohan Totting
+  domain: tyohan.me
+
 # U
 # V
 # W
@@ -169,17 +211,14 @@
   domain: xecops.com
 
 # Y
-
-- name: Yudanantoos
-  domain: yuda.nantoos.id
   
 - name: Yuda P. Nugraha
   domain: yudanugraha.id
 
 # Z
 
-
-
+- name: Zen
+  domain: blogzen.js.org
 
 
 

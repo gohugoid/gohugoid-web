@@ -1,20 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>{{ .Title }} – {{ len .Site.Data.showcase }} website indonesia yang menggunakan Hugo</title>
-
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
-    <link rel="icon" href="/logo.png" />
-</head>
-
-<body>
-
-    {{ partial "navbar.html" . }}
+{{ define "main" }}
 
     <header class="hero is-danger">
         <section class="hero-body">
@@ -44,7 +28,7 @@
                     <div class="box">
                         <div class="box-body has-text-centered">
                             <a href="https://{{ .domain }}" target="_blank">
-                                <img class="lazyload" src="/img/placeholder.png" data-src="https://s-ssl.wordpress.com/mshots/v1/{{ .domain }}?w=360" loading="lazy" />
+                                <img class="lazyload" src="/img/placeholder.png" data-src="https://s-ssl.wordpress.com/mshots/v1/{{ .domain }}?w=360" style="min-height:200px"/>
                                 <!-- 
                                     <img class="lazyload" src="https://cdn.staticaly.com/screenshot/{{ .domain }}?w=360" loading="lazy" /> 
                                     
@@ -64,8 +48,6 @@
     </section>
 
     <!-- @TODO: Use Pagintaion on this page (Hugo pagination only work for regular page)-->
-
-    {{ partial "footer.html" . }}
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
@@ -97,6 +79,5 @@
             }
         });
     </script>
-</body>
 
-</html>
+{{ end }}

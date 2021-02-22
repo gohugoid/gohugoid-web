@@ -9,7 +9,7 @@ slug: showcase
 
 image: "/img/"
 thumbnail: "/img/"
-description: "" # <-- isi ini!
+description: "Kumpulan website indonesia yang menggunakan Hugo"
 
 type: showcase
 ---
