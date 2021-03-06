@@ -130,8 +130,8 @@
 
 # L
 
-- name: Lombokfoss
-  domain: www.lombokfoss.com
+- name: LibreOffice Indonesia
+  domain: libreoffice.id
 
 # M
 
@@ -194,6 +194,9 @@
   domain: syahrulfadli.netlify.app
 
 # T
+
+- name: Ternak Linux
+  domain: www.ternaklinux.com
   
 - name: Yohan Totting
   domain: tyohan.me
