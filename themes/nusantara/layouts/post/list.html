@@ -24,7 +24,7 @@
 {{ $paginator := .Paginate (where .Pages "Section" "post") 9 }}
 
 
-<section class="section">
+<div class="section">
     <div class="container">
         <div class="columns is-multiline is-mobile">
             {{ range $paginator.Pages }}
@@ -63,7 +63,7 @@
             <!-- @TODO link navigasi pagination -->
         </div>
     </div>
-</section>
+</div>
 
 
 <script>
