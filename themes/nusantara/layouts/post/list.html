@@ -37,7 +37,7 @@
                                 <p class="image is-128x128">
                                     {{ $external_img_url := replaceRE "^https?://([^/]+.*)" "https://cdn.staticaly.com/screenshot/$1?w=128&h=128" .Params.external_url }}
                                     {{ $img_url :=  cond (eq .Params.external_url "") .Params.Image $external_img_url }}
-                                    <img class="lazyload" src="/img/placeholder.png"
+                                    <img class="lazyload" alt="{{ $img_url }}" title="{{ .Title }}" src="/img/placeholder.png"
                                         data-src='{{ $img_url }}'/>
                                 </p>
                             </figure>
