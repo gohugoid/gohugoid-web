@@ -45,6 +45,9 @@
 
 - name: clasense4 blog
   domain: blog.fajri.my.id
+  
+- name: capadesu blog
+  domain: blog.capadesu.space
 
 # D
 
