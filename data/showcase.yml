@@ -8,7 +8,7 @@
 
 - name: Abdullahsams
   domain: abdullahsams.me
-  
+
 - name: Adi Nugroho
   domain: adinugroho.my.id
 
@@ -17,15 +17,18 @@
 
 - name: ahmadiham.id
   domain: ahmadiham.id
-  
+
 - name: Ahmad Fadilah
   domain: ahmadfadilah.xyz
-  
+
 - name: Ara
   domain: pena-ara.github.io
-  
+
 - name: Ardianta
   domain: www.ardianta.com
+
+- name: ArikHn
+  domain: arikhn.gitlab.io
 
 - name: ariya.io
   domain: ariya.io
@@ -45,7 +48,7 @@
 
 - name: clasense4 blog
   domain: blog.fajri.my.id
-  
+
 - name: capadesu blog
   domain: blog.capadesu.space
 
@@ -59,7 +62,7 @@
 
 - name: Developer Muslim
   domain: devmuslim.id
-  
+
 - name: by DiPtra
   domain: blog.diptra.id
 
@@ -78,7 +81,7 @@
 
 - name: finder.co.id
   domain: finder.co.id
-  
+
 - name: Dev Stories
   domain: fadil.dev
 
@@ -111,7 +114,7 @@
 
 - name: Indra Gunawan
   domain: indra.my.id
-  
+
 - name: Iril Blog
   domain: iril.my.id
 
@@ -127,7 +130,7 @@
 
 - name: Khusika Dhamar Gusti
   domain: khusika.com
-  
+
 - name: kodebaper
   domain: kodebaper.com
 
@@ -192,7 +195,7 @@
 
 - name: Surya Adhi Kuncoro
   domain: suryadhi.web.id
-  
+
 - name: Syahrul Fadli
   domain: syahrulfadli.netlify.app
 
@@ -200,7 +203,7 @@
 
 - name: Ternak Linux
   domain: www.ternaklinux.com
-  
+
 - name: Yohan Totting
   domain: tyohan.me
 
@@ -213,7 +216,7 @@
   domain: xecops.com
 
 # Y
-  
+
 - name: Yuda P. Nugraha
   domain: yudanugraha.id
 
