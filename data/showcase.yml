@@ -128,9 +128,6 @@
 # J
 # K
 
-- name: KBL Bumigora
-  domain: kbl.stmikbumigora.ac.id
-
 - name: Khusika Dhamar Gusti
   domain: khusika.com
 
@@ -197,9 +194,6 @@
 
 - name: SliMS CommeetUp
   domain: slimscommeet.github.io
-
-- name: Syahravi
-  domain: syahravi.my.id
   
 - name: Surya Adhi Kuncoro
   domain: suryadhi.web.id
