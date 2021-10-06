@@ -50,10 +50,9 @@
                                 <div class="is-size-7 mb-2">By {{ range .Params.authors }}{{.}}{{end}} <span class="has-text-success">{{ replaceRE "^https?://([^/]+).*" "🔗 $1" .Params.external_url }}</span></div>
                                 <p>{{ .Params.description }}</p>
 
-                                <!-- @TODO Generate tag dari konten -->
-                                <span class="tag is-info is-light">Content</span>
-                                <span class="tag is-info is-light">Template</span>
-                                <span class="tag is-info is-light">Hosting</span>
+                                {{ range .Params.Tags }}
+                                <span class="tag is-info is-light">{{ . | humanize }}</span>
+                                {{ end }}
                             </div>
                         </div>
                     </article>
