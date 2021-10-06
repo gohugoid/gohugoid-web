@@ -22,7 +22,7 @@ external_url: "" # <-- link to original post
 # Catatan: Jika anda mengisi maram external_url, maka post ini akan mengarah
 # ke alamat tersebut. Tetapi jika kosong, maka ini termasuk internal post.
 
-image: "https://cdn.staticaly.com/screenshot/gohugoid.github.io/?w=128&h=128" # <-- bisa dikosongkan jika external post
+image: "https://s-ssl.wordpress.com/mshots/v1/gohugoid.github.io/?w=128&h=128" # <-- bisa dikosongkan jika external post
 thumbnail: "/img/" # <-- bisa dikosongkan jika  external post
 description: "Tambahkan artikelmu di website Hugo Indonesia agar muda ditemukan
 komunitas dan orang yang tertarik belajar tentang Hugo"
