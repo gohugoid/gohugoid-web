@@ -1,0 +1,13 @@
+{{ define "main" }}
+
+<section class="is-flex is-justify-content-center is-align-items-center" style="height: 70vh;">
+  <div class="has-text-centered">
+    <img src="/not-found.svg" width="360" alt="Not found illustration">
+    <h1 class="title mt-5">404 Not Found</h1>
+    <p>Halaman yang anda buka tidak ditemukan. <br/>Mungkin saja sudah dihapus.</p>
+    <a href="{{ .Site.BaseURL }}" class="button is-primary mt-5">Kembali ke Home</a>
+  </div>
+</section>
+
+
+{{ end }}
