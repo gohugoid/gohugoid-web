@@ -45,8 +45,9 @@
                 <h2 class="is-size-4"><a href='{{ cond (eq .Params.external_url "") .Permalink .Params.external_url }}'
                     target='{{ cond (eq .Params.external_url "") "_self" "_blank" }}'>{{ .Title }}</a>
                 </h2>
-                <div class="is-size-7 mb-2">By {{ range .Params.authors }}{{.}}{{end}} <span class="has-text-success">{{
-                    replaceRE "^https?://([^/]+).*" "🔗 $1" .Params.external_url }}</span></div>
+                <div class="is-size-7 mb-2">By {{ range .Params.authors }}{{.}}{{end}} 
+                  <span class="has-text-success">{{- replaceRE "^https?://([^/]+).*" "🔗 $1" .Params.external_url }}</span>
+                </div>
                 <p>{{ .Params.description }}</p>
 
                 {{ range .Params.Tags }}
