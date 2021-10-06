@@ -51,7 +51,7 @@
                                 <p>{{ .Params.description }}</p>
 
                                 {{ range .Params.Tags }}
-                                <span class="tag is-info is-light">{{ . | humanize }}</span>
+                                <a href="/tags/{{ . | urlize }}" class="tag is-link is-light">{{ . | humanize }}</a>
                                 {{ end }}
                             </div>
                         </div>

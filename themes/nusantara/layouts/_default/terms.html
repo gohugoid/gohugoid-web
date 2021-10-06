@@ -1,0 +1,41 @@
+{{ define "main" }}
+
+<header class="hero is-danger">
+    <section class="hero-body">
+        <div class="container">
+            <h1 class="title has-text-white">List Semua Tags</h1>
+            <p class="subtitle has-text-white">
+                Temukan artikel berdasarkan tag
+            </p>
+        </div>
+    </section>
+</header>
+
+<div class="py-2 has-background-light	">
+  <nav class="container breadcrumb" aria-label="breadcrumbs">
+    <ul>
+      <li><a href="{{ .Site.BaseURL }}">Home</a></li>
+      <li class="is-active"><a href="#">{{ .Title }}</a></li>
+    </ul>
+  </nav>
+</div>
+
+
+<div class="section">
+  <div class="container">
+      <div class="is-multiline is-mobile">
+        <h2 class="title">All Tags</h2>
+        <ul>
+          {{ range .Site.Taxonomies.tags }}
+           <li class="tags has-addons">
+             <a class="tag is-light is-medium is-link" href="{{ .Page.Permalink }}">{{ .Page.Title }}</a> 
+             <span class="tag is-medium is-info">{{ .Count }}</span>
+            </li>
+          {{ end }}
+        </ul>
+        
+      </div>
+  </div>
+</div>
+
+{{ end }}

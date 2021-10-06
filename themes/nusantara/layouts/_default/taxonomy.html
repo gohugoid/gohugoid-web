@@ -1,0 +1,100 @@
+{{ define "main" }}
+
+<header class="hero is-danger">
+  <section class="hero-body">
+    <div class="container">
+      <h1 class="title has-text-white">Artikel Berdasarkan Tag: {{ .Title }}</h1>
+    </div>
+  </section>
+</header>
+
+
+<div class="py-2 has-background-light	">
+  <nav class="container breadcrumb" aria-label="breadcrumbs">
+    <ul>
+      <li><a href="{{ .Site.BaseURL }}">Home</a></li>
+      <li><a href="/tags/">Tags</a></li>
+      <li class="is-active"><a href="#">{{ .Title }}</a></li>
+    </ul>
+  </nav>
+</div>
+
+{{ $paginator := .Paginate (where .Pages "Section" "post") 9 }}
+
+
+<div class="section">
+  <div class="container">
+    <div class="columns is-multiline is-mobile">
+      {{ range $paginator.Pages }}
+      <div class="column is-8-desktop is-12-tablet is-offset-2-desktop">
+        <div class="box">
+
+          <article class="media">
+            <div class="media-left">
+              <figure class="media-left">
+                <p class="image is-128x128">
+                  {{ $external_img_url := replaceRE "^https?://([^/]+.*)"
+                  "https://s-ssl.wordpress.com/mshots/v1/$1?w=128&h=128" .Params.external_url }}
+                  {{ $img_url := cond (eq .Params.external_url "") .Params.Image $external_img_url }}
+                  <img class="lazyload" alt="{{ $img_url }}" title="{{ .Title }}" src="/img/placeholder.png"
+                    data-src='{{ $img_url }}' />
+                </p>
+              </figure>
+            </div>
+            <div class="media-content">
+              <div class="content">
+                <h2 class="is-size-4"><a href='{{ cond (eq .Params.external_url "") .Permalink .Params.external_url }}'
+                    target='{{ cond (eq .Params.external_url "") "_self" "_blank" }}'>{{ .Title }}</a>
+                </h2>
+                <div class="is-size-7 mb-2">By {{ range .Params.authors }}{{.}}{{end}} <span class="has-text-success">{{
+                    replaceRE "^https?://([^/]+).*" "🔗 $1" .Params.external_url }}</span></div>
+                <p>{{ .Params.description }}</p>
+
+                {{ range .Params.Tags }}
+                <span class="tag is-info is-light">{{ . | humanize }}</span>
+                {{ end }}
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+      {{ end }}
+      <!-- @TODO link navigasi pagination -->
+    </div>
+  </div>
+</div>
+
+
+<script>
+  // @TODO: mungkin ini bisa dijadikan satu dengan script lazyload yang di page showcase (layout/shocase/single.html)
+  document.addEventListener("DOMContentLoaded", function () {
+    var lazyImages = [].slice.call(document.querySelectorAll(".lazyload"));
+
+    if ("IntersectionObserver" in window) {
+      let lazyImageObserver = new IntersectionObserver(function (entries, observer) {
+        entries.forEach(function (entry) {
+
+          if (entry.isIntersecting) {
+            let lazyImage = entry.target;
+            if (lazyImage.dataset.src != undefined)
+              lazyImage.src = lazyImage.dataset.src;
+            if (lazyImage.dataset.srcset != undefined)
+              lazyImage.srcset = lazyImage.dataset.srcset;
+
+            lazyImage.classList.add("lazyloaded");
+            lazyImageObserver.unobserve(lazyImage);
+          }
+        });
+      });
+
+      lazyImages.forEach(function (lazyImage) {
+        lazyImageObserver.observe(lazyImage);
+      });
+    } else {
+      // Possibly fall back to a more compatible method here
+      console.log("Browser Not supported, please upgrade!");
+    }
+  });
+</script>
+
+{{ end }}
