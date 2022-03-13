@@ -130,6 +130,8 @@
 - name: isul.net
   domain: isul.net
 
+- name : idfoss
+  domain : idfoss.netlify.app
 
 # J
 # K
