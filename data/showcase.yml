@@ -12,9 +12,6 @@
 - name: Adi Nugroho
   domain: adinugroho.my.id
 
-- name: aemtsh
-  domain: aemtsh.github.io
-
 # - name: Adrian Riyadi
 #   domain: adrian.id
 
@@ -175,6 +172,9 @@
 
 - name: Muhammad Hanif
   domain: hanifmu.com
+
+- name: mautsh
+  domain: mautsh.com
 
 # N
 
