@@ -8,7 +8,7 @@ This is source code of Hugo Indonesia Community website.
 
 ## Requirements
 
-- Hugo >= `v0.105.0`
+- Hugo >= `v0.105.0` (Extended Version)
 
 ## Cara Menambahkan Showcase
 

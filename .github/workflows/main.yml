@@ -2,14 +2,14 @@ name: Deploy
 on: [push]
 jobs:
   build:
-    name: Build
+    name: Deploy Site
     runs-on: ubuntu-latest
     steps:
     - name: Check out code
       uses: actions/checkout@master
       with:
         fetch-depth: 1
-    - name: Publish Site
+    - name: Build & Publish Site
       uses: gohugoid/hugo-gh-pages@master
       with:
         githubToken: ${{ secrets.DEPLOY_TOKEN }}
@@ -22,7 +22,7 @@ jobs:
         repo: gohugoid/gohugoid.github.io
         # Use if your pushing to a different repo.
         # Dont add ".git" to the end of the URL (youl'll get 404s).
-        hugoVersion: 0.105.0
+        hugoVersion: extended_0.105.0
         # Use if your site requires a specific version of Hugo
         # Append "extended_" to the begining to use Hugo Extended
         args: --gc --minify --cleanDestinationDir

@@ -29,6 +29,10 @@ external_url: "" # <-- link to original post
 image: "/img/" # <-- bisa dikosongkan jika external post
 thumbnail: "/img/" # <-- bisa dikosongkan jika  external post
 description: "" # <-- isi ini!
+
+# For Typora Editor
+typora-root-url: ../../static
+typora-copy-images-to: ../../static/img/{{ .BaseFileName }}/
 ---
 
 <!-- Jika ini postingan dari luar (eksternal post), maka konten tidak perlu diisi ya! -->
