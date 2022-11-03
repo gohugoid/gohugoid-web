@@ -6,9 +6,6 @@
 - name: Andre Rio
   domain: wibucode.com
 
-- name: Abdullahsams
-  domain: abdullahsams.me
-
 - name: Adi Nugroho
   domain: adinugroho.my.id
 
@@ -17,9 +14,6 @@
 
 - name: ahmadiham.id
   domain: ahmadiham.id
-
-- name: Ahmad Fadilah
-  domain: ahmadfadilah.xyz
 
 - name: Aliif Arief
   domain: aliif.space
@@ -44,16 +38,10 @@
 - name: Bowo's Blog
   domain: www.owob.web.id
 
-- name: Budiman Fajar Firdaus
-  domain: budidev.com
-
 # C
 
 - name: clasense4 blog
   domain: blog.fajri.my.id
-
-- name: capadesu blog
-  domain: blog.capadesu.space
 
 # D
 
@@ -62,9 +50,6 @@
 
 - name: Dantonkoto
   domain: dantonkoto.web.id
-
-- name: dedemid
-  domain: dedem.id
 
 - name: Developer Muslim
   domain: devmuslim.id
@@ -91,12 +76,6 @@
 - name: Farrel Franqois Blog
   domain: farrel.franqois.id
 
-- name: finder.co.id
-  domain: finder.co.id
-
-- name: Dev Stories
-  domain: fadil.dev
-
 # G
 
 # H
@@ -106,9 +85,6 @@
 
 - name: Hilma's notes
   domain: icit.web.id
-
-- name: Himawari466 Blog
-  domain: himawari466.github.io/blog
 
 - name: Hugo Indonesia
   domain: gohugoid.github.io
@@ -148,9 +124,6 @@
 - name: khusika.dev
   domain: khusika.dev
 
-- name: kodebaper
-  domain: kodebaper.com
-
 # L
 - name : lalu doni setiawan
   domain : portofolio.laludonisetiawan.com
@@ -169,17 +142,11 @@
 - name: Migrasi 2 Awan
   domain: migrasi2awan.com
 
-- name: Meutia Rahmah
-  domain: www.meutiarahmah.com
-
 - name: Mohamad Faisal Kholid
   domain: faisalkholid.github.io
 
 - name: Muhammad Hanif
   domain: hanifmu.com
-
-- name: mautsh
-  domain: mautsh.com
 
 # N
 
@@ -203,9 +170,6 @@
 - name: Petani Kode
   domain: www.petanikode.com
 
-- name: primaadi.net
-  domain: primaadi.net
-
 # Q
 # R
 
@@ -213,9 +177,6 @@
   domain: rezhajulio.id
 
 # S
-
-- name: Saya Kresna
-  domain: www.satyakresna.io
 
 - name: Serverless Indonesia
   domain: blog.serverless.id
