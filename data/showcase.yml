@@ -2,7 +2,9 @@
 # cukup tuliskan nama domain saja, tidak perlu pakai http/https.
 
 # A
-
+- name: Anas Fanani
+  domain: anasfanani.com
+  
 - name: Andre Rio
   domain: wibucode.com
 
