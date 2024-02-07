@@ -2,6 +2,7 @@
 # cukup tuliskan nama domain saja, tidak perlu pakai http/https.
 
 # A
+
 - name: Anas Fanani
   domain: anasfanani.com
   
@@ -104,6 +105,9 @@
 
 - name: idbmb.my.id
   domain: idbmb.my.id
+
+- name: IfulXploit
+  domain: ifulxploit.github.io
 
 - name: Indigo Game Startup Incubation
   domain: game.indigo.id
