@@ -1,20 +1,32 @@
-## Hugo Indonesia Websites
+## Situs Hugo Indonesia
 
 ![Build Status](https://github.com/gohugoid/gohugoid-web/workflows/Deploy/badge.svg)
 [![Telegram][Telegram-badge]][Telegram]
 
-This is source code of Hugo Indonesia Community website.
+Ini adalah sumber kode website dari komunitas Hugo Indonesia.
 
+## Persyaratan
 
-## Requirements
+#### Linux
 
-- Hugo >= `v0.105.0` (Extended Version)
+- Hugo >= `v0.105.0` [Extended Version](https://gohugo.io/installation/linux/#editions)
 
-## Cara Menambahkan Showcase
+#### Windows
 
-Silahkan edit file `data/showcase.yml`, masukan nama website
-dan nama domainnya. Ikuti saja seperti data yang sudah ada di sana.
-Jangan gunakan http/https, cukup tulis nama domain saja.
+-  Hugo >= `v0.105.0` [Extended Version](https://gohugo.io/installation/windows/#editions)
+
+#### MacOS
+
+- Hugo >= `v0.105.0` [Extended Version](https://gohugo.io/installation/macos/#editions)
+
+#### BSD
+
+- Hugo >= `v0.105.0` [Extended Version](https://gohugo.io/installation/bsd/#editions)
+
+## Cara Menambahkan Situs (Showcase)
+
+Silahkan sunting file `data/showcase.yml` kemudian masukan nama situs Anda beserta nama domain. 
+Ikuti saja seperti data yang sudah ada di sana. **Jangan gunakan** `http/https` cukup tulis nama domain saja.
 
 Contoh:
 
@@ -25,11 +37,11 @@ Contoh:
 
 ## Cara Menambahkan Artikel
 
-Silahkan baca tutorial [cara menambahkan artikel di web Hugo indonesia](https://gohugoid.github.io/post/artikel-hugo-indonesia/).
+Silahkan baca panduan [Cara Menambahkan Artikel di Web Hugo Indonesia](https://gohugoid.github.io/post/artikel-hugo-indonesia/).
 
-## Have an Idea?
+## Punya Sebuah Ide?
 
-Please open the [issue](https://github.com/gohugoid/gohugoid-web/issues) or pull request.
+Silahkan buka [_issue_](https://github.com/gohugoid/gohugoid-web/issues) atau buat _pull request_.
 
 [Telegram]: https://t.me/gohugoid
 [Telegram-badge]: https://img.shields.io/badge/chat%20on-telegram-blue.svg
