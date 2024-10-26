@@ -16,22 +16,28 @@
                     <nav class="level is-mobile hero-body">
                         <div class="level-item has-text-centered">
                             <div>
-                                <a href="https://t.me/gohugoid/" target="_blank">
+                                <a href="/post/">
                                     <span class="icon">
-                                        <i class="fas fa-users fa-4x has-text-info"></i>
+                                        <i class="fas fa-newspaper fa-4x has-text-info"></i>
                                     </span>
-                                    <p class="heading">Members</p>
-                                    <p class="title" id="member-count">0</p>
+                                    <p class="heading">Artikel</p>
+                                    <p class="title" id="member-count">{{ len (where .Site.RegularPages "Section" "=" "post")}}</p>
                                 </a>
                             </div>
                         </div>
                         <div class="level-item has-text-centered">
                             <div>
                                 <span class="icon">
-                                    <i class="fas fa-calendar-alt fa-4x has-text-warning"></i>
+                                    <i class="fas fa-users fa-4x has-text-warning"></i>
                                 </span>
-                                <p class="heading">Events</p>
-                                <p class="title">0</p>
+                                <p class="heading">Kontributor</p>
+                                <p class="title">
+                                    {{ $githubContributorsUrl := "https://api.github.com/repos/gohugoid/gohugoid-web/contributors" }}
+                                    {{ with resources.GetRemote $githubContributorsUrl }}
+                                        {{ $data := . | transform.Unmarshal }}
+                                        {{ len $data }}
+                                    {{ end }}
+                                </p>
                             </div>
                         </div>
                         <div class="level-item has-text-centered">
@@ -40,7 +46,7 @@
                                     <span class="icon">
                                         <i class="fas fa-globe-asia fa-4x has-text-primary"></i>
                                     </span>
-                                    <p class="heading">Websites</p>
+                                    <p class="heading">Website</p>
                                     <p class="title">{{ len .Site.Data.showcase }}</p>
                                 </a>
                             </div>
