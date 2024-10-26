@@ -1,77 +1,99 @@
 {{ define "main" }}
-   
-    <header class="hero is-danger is-medium">
-        <div class="hero-body">
-            <div class="container has-text-centered">
-            </div>
+
+{{ $githubContributorsUrl := "https://api.github.com/repos/gohugoid/gohugoid-web/contributors" }}
+{{ $contributors := resources.GetRemote $githubContributorsUrl | transform.Unmarshal }}
+
+<header class="hero is-danger is-medium">
+    <div class="hero-body">
+        <div class="container has-text-centered">
         </div>
-    </header>
+    </div>
+</header>
 
 
-    <section class="section counter-panel">
-        <div class="container">
-            <div class="columns">
-                <div class="box hero column is-8 mx-auto">
-                    <h2 class="title has-text-centered pt-5">Hugo Indonesia</h2>
-                    <nav class="level is-mobile hero-body">
-                        <div class="level-item has-text-centered">
-                            <div>
-                                <a href="/post/">
-                                    <span class="icon">
-                                        <i class="fas fa-newspaper fa-4x has-text-info"></i>
-                                    </span>
-                                    <p class="heading">Artikel</p>
-                                    <p class="title" id="member-count">{{ len (where .Site.RegularPages "Section" "=" "post")}}</p>
-                                </a>
-                            </div>
+<section class="section counter-panel">
+    <div class="container">
+        <div class="columns">
+            <div class="box hero column is-8 mx-auto">
+                <h2 class="title has-text-centered pt-5">Hugo Indonesia</h2>
+                <nav class="level is-mobile hero-body">
+                    <div class="level-item has-text-centered">
+                        <div>
+                            <a href="/post/">
+                                <span class="icon">
+                                    <i class="fas fa-newspaper fa-4x has-text-info"></i>
+                                </span>
+                                <p class="heading">Artikel</p>
+                                <p class="title" id="member-count">{{ len (where .Site.RegularPages "Section" "="
+                                    "post")}}</p>
+                            </a>
                         </div>
-                        <div class="level-item has-text-centered">
-                            <div>
+                    </div>
+                    <div class="level-item has-text-centered">
+                        <div>
+                            <a href="#contributors">
                                 <span class="icon">
                                     <i class="fas fa-users fa-4x has-text-warning"></i>
                                 </span>
                                 <p class="heading">Kontributor</p>
                                 <p class="title">
-                                    {{ $githubContributorsUrl := "https://api.github.com/repos/gohugoid/gohugoid-web/contributors" }}
-                                    {{ with resources.GetRemote $githubContributorsUrl }}
-                                        {{ $data := . | transform.Unmarshal }}
-                                        {{ len $data }}
-                                    {{ end }}
+                                    {{ len $contributors }}
                                 </p>
-                            </div>
+                            </a>
                         </div>
-                        <div class="level-item has-text-centered">
-                            <div>
-                                <a href="/showcase/">
-                                    <span class="icon">
-                                        <i class="fas fa-globe-asia fa-4x has-text-primary"></i>
-                                    </span>
-                                    <p class="heading">Website</p>
-                                    <p class="title">{{ len .Site.Data.showcase }}</p>
-                                </a>
-                            </div>
+                    </div>
+                    <div class="level-item has-text-centered">
+                        <div>
+                            <a href="/showcase/">
+                                <span class="icon">
+                                    <i class="fas fa-globe-asia fa-4x has-text-primary"></i>
+                                </span>
+                                <p class="heading">Website</p>
+                                <p class="title">{{ len .Site.Data.showcase }}</p>
+                            </a>
                         </div>
-                    </nav>
-                </div>
+                    </div>
+                </nav>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section class="section">
-        <div class="container">
-            <div class="columns">
-                <div class="column is-4 is-offset-1 has-text-center">
-                    <img src="/img/status-update.svg" alt="/img/status-update.svg" title="About Us" width="400" />
-                </div>
-                <div class="column is-6">
-                    <h2 class="title">About Us</h2>
-                    <p>Hugo Indonesia adalah komunitas pengguna dan pengembang Hugo di Indonesia.
-                        Mulai berdiri sejak 18 Desember 2017 (di Telegram). Komunitas ini bertujuan untuk belajar dan
-                        berbagi segala hal tentang Hugo Static Site Generator dan JAM Stacks.
-                    </p>
-                </div>
+<section class="section">
+    <div class="container">
+        <div class="columns">
+            <div class="column is-4 is-offset-1">
+                <img src="/img/status-update.svg" alt="/img/status-update.svg" title="About Us" width="400" />
+            </div>
+            <div class="column is-6">
+                <h2 class="title">About Us</h2>
+                <p>Hugo Indonesia adalah komunitas pengguna dan pengembang Hugo di Indonesia.
+                    Mulai berdiri sejak 18 Desember 2017 (di Telegram). Komunitas ini bertujuan untuk belajar dan
+                    berbagi segala hal tentang Hugo Static Site Generator dan JAM Stacks.
+                </p>
             </div>
         </div>
-    </section>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="column is-9 mx-auto">
+            <h2 class="title has-text-centered pt-5 pb-4" id="contributors">Contributors</h2>
+            <div class="grid is-col-min-6 is-gap-4">
+                {{ range $contributors }}
+                <div class="cell is-flex is-justify-content-center is-flex-direction-column is-align-items-center">
+                    <a href="{{ .html_url }}" target="_blank">
+                        <figure class="image is-128x128 mb-3">
+                            <img src="{{ .avatar_url }}" class="is-rounded" />
+                        </figure>
+                    </a>
+                    <a href="{{ .html_url }}" target="_blank">{{ .login }}</a>
+                </div>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</section>
 
 {{ end }}
