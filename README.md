@@ -9,19 +9,19 @@ Ini adalah sumber kode website dari komunitas Hugo Indonesia.
 
 #### Linux
 
-- Hugo >= `v0.105.0` [Extended Version](https://gohugo.io/installation/linux/#editions)
+- Hugo >= `v0.135.0` [Extended Version](https://gohugo.io/installation/linux/#editions)
 
 #### Windows
 
--  Hugo >= `v0.105.0` [Extended Version](https://gohugo.io/installation/windows/#editions)
+-  Hugo >= `v0.135.0` [Extended Version](https://gohugo.io/installation/windows/#editions)
 
 #### MacOS
 
-- Hugo >= `v0.105.0` [Extended Version](https://gohugo.io/installation/macos/#editions)
+- Hugo >= `v0.135.0` [Extended Version](https://gohugo.io/installation/macos/#editions)
 
 #### BSD
 
-- Hugo >= `v0.105.0` [Extended Version](https://gohugo.io/installation/bsd/#editions)
+- Hugo >= `v0.135.0` [Extended Version](https://gohugo.io/installation/bsd/#editions)
 
 ## Cara Menambahkan Situs (Showcase)
 
@@ -32,7 +32,7 @@ Contoh:
 
 ```yml
 - name: Hugo Indonesia
-  domain: gohugoid.github.io
+  domain: hugo.community.or.id
 ```
 
 ## Cara Menambahkan Artikel
