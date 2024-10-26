@@ -26,4 +26,4 @@ jobs:
         # Use if your site requires a specific version of Hugo
         # Append "extended_" to the begining to use Hugo Extended
         args: --gc --minify --cleanDestinationDir
-        # Use if you want to pass some custom arguments to Hugo
+        # Use if you want to pass some custom arguments to Hugo 

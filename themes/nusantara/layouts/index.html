@@ -1,6 +1,6 @@
 {{ define "main" }}
 
-{{ $githubContributorsUrl := "https://api.github.com/repos/gohugoid/gohugoid-web/contributors" }}
+{{ $githubContributorsUrl := "https://api.github.com/repos/gohugoid/gohugoid-web/contributors?per_page=1000" }}
 {{ $contributors := resources.GetRemote $githubContributorsUrl | transform.Unmarshal }}
 
 <header class="hero is-danger is-medium">
