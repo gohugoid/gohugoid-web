@@ -6,20 +6,8 @@
 - name: Anas Fanani
   domain: anasfanani.com
 
-- name: Andi Wira Wahyudi
-  domain: anwiwah.my.id
-  
-- name: Andre Rio
-  domain: wibucode.com
-
 - name: Adi Nugroho
   domain: adinugroho.my.id
-
-- name: Anggi Ramadyansyah
-  domain: suk4laper.space
-
-- name: Newbie Master ID
-  domain: newbiemasterid.my.id
 
 # - name: Adrian Riyadi
 #   domain: adrian.id
@@ -27,9 +15,6 @@
 - name: ahmadiham.id
   domain: ahmadiham.id
 
-- name: Aliif Arief
-  domain: aliif.space
-  
 - name: Ara
   domain: nesstero.github.io
 
@@ -42,19 +27,12 @@
 - name: ariya.io
   domain: ariya.io
 
-- name: ardiansyah
-  domain: ardiansyah.netlify.com
-
 # B
 
 - name: Bowo's Blog
   domain: www.owob.web.id
 
 # C
-
-- name: clasense4 blog
-  domain: blog.fajri.my.id
-
 # D
 
 - name: Dalam Kotak
@@ -63,14 +41,8 @@
 - name: Dantonkoto
   domain: dantonkoto.web.id
 
-- name: Developer Muslim
-  domain: devmuslim.id
-
 - name: Devlogor
   domain: devlogor.vercel.app
-  
-- name: by DiPtra
-  domain: blog.diptra.id
 
 # E
 
@@ -84,16 +56,13 @@
 
 - name: fadhil.id
   domain: fadhil.id
-  
+
 - name: Farrel Franqois Blog
   domain: farrel.franqois.id
 
 # G
 
 # H
-
-- name: Habibi
-  domain: habibi2004.tech
 
 - name: Hilma's notes
   domain: icit.web.id
@@ -115,9 +84,6 @@
 - name: Indigo Game Startup Incubation
   domain: game.indigo.id
 
-- name: Indo Membrane
-  domain: indomembrane.id
-
 - name: Indra Gunawan
   domain: indra.my.id
 
@@ -127,8 +93,8 @@
 - name: isul.net
   domain: isul.net
 
-- name : idfoss
-  domain : idfoss.netlify.app
+- name: idfoss
+  domain: idfoss.netlify.app
 
 # J
 # K
@@ -140,8 +106,6 @@
   domain: khusika.id
 
 # L
-- name : lalu doni setiawan
-  domain : portofolio.laludonisetiawan.com
 
 - name: LibreOffice Indonesia
   domain: libreoffice.id
@@ -160,9 +124,6 @@
 - name: Migrasi 2 Awan
   domain: migrasi2awan.com
 
-- name: Mohamad Faisal Kholid
-  domain: faisalkholid.github.io
-
 - name: Muhammad Hanif
   domain: hanifmu.com
 
@@ -171,15 +132,11 @@
 - name: Nafies Luthfi
   domain: nafies.id
 
-- name: Nurofsun
-  domain: nurofsun.com
-
 # O
-- name: Ori Fin
-  domain: ori.my.id
-  
+
 - name: Oka bRionZ
   domain: www.okabrionz.com
+
 # P
 
 - name: Pantura Code
@@ -194,9 +151,6 @@
 - name: Rania Amina
   domain: raniaamina.id
 
-- name: rezhajulio.id
-  domain: rezhajulio.id
-
 # S
 
 - name: Serverless Indonesia
@@ -204,20 +158,17 @@
 
 - name: SliMS CommeetUp
   domain: slimscommeet.github.io
-  
+
 - name: Surya Adhi Kuncoro
   domain: suryadhi.web.id
 
 - name: Syahrul Fadli
   domain: fadlii.netlify.app
- 
+
 - name: Syahravi
   domain: www.syahravi.my.id
 
 # T
-
-- name : TDF Programming
-  domain : tdfprogramming.com
 
 - name: Ternak Linux
   domain: www.ternaklinux.com
@@ -238,7 +189,7 @@
 
 - name: xecops
   domain: xecops.com
-  
+
 - name: XUIY Florist
   domain: xuiy.biz.id
 # Y
@@ -250,8 +201,3 @@
 
 - name: Zen
   domain: blogzen.js.org
-
-
-
-
-
