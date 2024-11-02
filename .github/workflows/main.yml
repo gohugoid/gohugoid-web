@@ -1,6 +1,7 @@
 name: Deploy
 on: [push]
 jobs:
+  if: github.repository_owner == 'gohugoid'
   build:
     name: Deploy Site
     runs-on: ubuntu-latest
