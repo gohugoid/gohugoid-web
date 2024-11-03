@@ -3,6 +3,10 @@
 {{ $githubContributorsUrl := "https://api.github.com/repos/gohugoid/gohugoid-web/contributors?per_page=1000" }}
 {{ $contributors := resources.GetRemote $githubContributorsUrl | transform.Unmarshal }}
 
+{{ $css := resources.Get "css/style.scss" | toCSS | minify | fingerprint }}
+<link rel="stylesheet" href="{{ $css.Permalink }}">
+
+<!-- Hero Header -->
 <header class="hero is-danger is-medium">
     <div class="hero-body">
         <div class="container has-text-centered">
@@ -10,7 +14,7 @@
     </div>
 </header>
 
-
+<!-- Counter Panel Section -->
 <section class="section counter-panel">
     <div class="container">
         <div class="columns">
@@ -59,6 +63,7 @@
     </div>
 </section>
 
+<!-- About Us Section -->
 <section class="section">
     <div class="container">
         <div class="columns">
@@ -76,6 +81,7 @@
     </div>
 </section>
 
+<!-- Contributors Section -->
 <section class="section">
     <div class="container">
         <div class="column is-9 mx-auto">
@@ -95,5 +101,29 @@
         </div>
     </div>
 </section>
+
+<!-- Go to Top Button -->
+<button id="goToTopButton" class="button is-primary" style="position: fixed; bottom: 20px; right: 20px; display: none;">
+    ↑ Go to Top
+</button>
+
+<script>
+    // Show the "Go to Top" button when scrolling down
+    window.onscroll = function() { toggleGoToTopButton(); };
+
+    function toggleGoToTopButton() {
+        const button = document.getElementById("goToTopButton");
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            button.style.display = "block";
+        } else {
+            button.style.display = "none";
+        }
+    }
+
+    // Scroll smoothly to the top of the page when button is clicked
+    document.getElementById("goToTopButton").onclick = function() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    };
+</script>
 
 {{ end }}
